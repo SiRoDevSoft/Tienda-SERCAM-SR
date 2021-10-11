@@ -1,0 +1,525 @@
+/* .secmain{
+    border: 2px solid red;
+} */
+
+.wave{
+    position: inherit;
+    bottom: 0px;
+    width: 100%;
+}
+
+.headers{
+    width: 100%;
+    height: 500px;
+    background: #3493e600;
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #6e818b33, #809ab87c), url(../../img/page/Portada2.jpg);
+    Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00537700, #002f5b54), url(../../img/page/Portada2.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.headers>.titleMain{  
+    font-size: 75px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgba(46, 61, 59, 0.748);
+    font-family: 'Quantico', sans-serif;
+}
+.headers>.slogan{  
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(46, 61, 59, 0.748);
+    font-family: 'Quantico', sans-serif;
+}
+.container-about-we{
+    border: 2px solid rgba(130, 134, 130, 0.39);
+    box-shadow: 3px 3px 5px 0 rgba(34, 34, 34, 0.651);
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    overflow: hidden;
+}
+
+.image-about-us{
+    width: 100%;
+    box-shadow: 3px 3px 5px 0 rgba(34, 34, 34, 0.651);
+    margin-top: 30px;
+}
+.container-text{
+    width: 48%;
+}
+.title-head{
+    color: rgb(3, 107, 169);
+    font-size: 30px;
+    text-shadow: 1px 1px 2px rgba(91, 99, 98, 0.748);
+    text-align: center;
+}
+.container-about-we>
+.col-sm-12>
+.col-sm-6>
+h3{
+    margin-bottom: 15px;
+    color: #178888;
+    font-size: 22px
+}
+.container-about-we>
+.col-sm-12>
+.col-sm-6>h3 span{
+    background: rgb(15, 131, 177);
+    background: linear-gradient(to right, #005477, #005b51);
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+.container-about-we>
+.col-sm-12>
+.col-sm-6>p{
+    /* padding: 0px 0px 30px 15px; */
+    font-weight: 300;
+    text-align: justify;
+    color: #555a5f;
+}
+
+
+/* Galery */
+.portfolio {
+    background: rgb(43, 107, 99);
+    background: -webkit-linear-gradient(to right, #6e818b33, #809ab87c);
+    background: linear-gradient(to right, #036ba9, #bfd1dd);
+}
+.portfolio>.containers {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.portfolio>.containers>.title-products{
+    color: rgb(248, 252, 255);
+    font-size: 30px;
+    text-shadow: 1px 1px 2px rgba(91, 99, 98, 0.748);
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+/*Aplicamos la magia a las imagenes*/
+.portfolio>.containers>.galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /*Hace que se separen las imagenes*/
+}
+.portfolio>.containers>.galeria-port>
+.image-port {
+    width: 23%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+.portfolio>.containers>.galeria-port>
+.image-port>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.portfolio>.containers>.galeria-port>
+.image-port>
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    transform: scale(0);
+    background: hsla(175, 20%, 76%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+.portfolio>.containers>.galeria-port>
+.image-port>
+.hover-galeria> img {
+    width: 50%;
+}
+.portfolio>.containers>.galeria-port>
+.image-port>
+.hover-galeria> a >p {
+    color: white;
+    margin-top: 20px;
+    font-size: 15px;
+    
+}
+.portfolio>.containers>.galeria-port>
+.image-port:hover .hover-galeria {
+    transform: scale(1);
+}
+
+/* Customers */
+
+.customers{
+    width: 100%;
+    height: 400px;
+    background: #3494E6;
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #6e818b33, #809ab87c), url(../../img/page/Portada2.jpg); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0053771e, #005b503d), url(../../img/page/Portada2.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.customers>.container>.titlecustomers{
+    color: rgb(248, 252, 255);
+    font-size: 30px;
+    text-shadow: 1px 1px 2px rgba(91, 99, 98, 0.748);
+    text-align: center;
+    margin-bottom: 5%;
+}
+.customer.container{
+    
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+.customers>.container>.target{
+    
+    /* border: 3px solid white; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    width: 500px;
+    
+}
+
+.customers .card_customers .cards{
+    margin: 10px 10px;
+    background: linear-gradient(to left, #036ba9, #9fa7ac);
+    width: 85%;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #f0f0f0;
+    border-radius: 50%;
+    display: block;
+    margin:0 auto 3% auto
+}
+
+.cards>.container-text-card {
+    width: 70%;
+    color: white;
+    margin: auto;
+}
+
+.cards>.container-text-card h4{
+    text-align: center;
+}
+
+.cards>.container-text-card p {
+    /* font-weight: 300; */
+    font-size: 14px;
+    text-align: justify;
+}
+.main-footer{
+    border: 2px solid rgb(15, 15, 15);
+    height: 250px;
+    background-color: #262d33;
+}
+
+.content-foot{
+    /* border: 2px solid rgb(240, 17, 17); */
+    text-align: center;
+    color: #d8e4ee;
+}
+.content-foot>p{
+    margin-bottom: 5%;
+}
+.text-footer{
+    border-top: 2px solid rgb(70, 68, 68);
+    text-align: center;
+    color: #d8e4ee;
+    margin-top: 15%;
+    background-color: #262d33;
+}
+
+
+
+@media screen and (max-width:700px) {
+    
+    .headers>.titleMain{  
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 2px rgba(46, 61, 59, 0.748);
+        font-family: 'Quantico', sans-serif;
+    }
+    .headers>.slogan{  
+        font-size: 20px;
+        font-weight: 300;
+        color: white;
+        text-shadow: 1px 1px 2px rgba(46, 61, 59, 0.748);
+        font-family: 'Quantico', sans-serif;
+    }
+    .container-about-we {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-about-us {
+        width: 100%;
+        margin-bottom: 3%;
+        /* margin-left: 10%; */
+    }
+    .container-text{
+        width: 100%;
+    }
+     /**Galeria*/
+     .image-port {
+        width: 44%;
+    }
+    .portfolio>.containers>.galeria-port>
+    .image-port {
+    width: 40%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    }
+    .customers>.container>.target{
+    
+        /* border: 3px solid white; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+        width: 450px;
+        
+    }
+        
+    .cards>.container-text-card {
+        width: 80%;
+        color: white;
+        margin: auto;
+    }
+    .title-head-end{
+        color: rgb(3, 107, 169);
+        font-size: 15px;
+        text-shadow: 1px 1px 2px rgba(91, 99, 98, 0.748);
+        text-align: center;
+    }
+    .main-footer{
+        border: 2px solid rgb(15, 15, 15);
+        height: 400px;
+        background-color: #262d33;
+    }
+    .content-foot>h4{
+        /* border: 2px solid rgb(240, 17, 17); */
+        padding-top: 3%;
+    }
+    .text-footer{
+        border-top: 2px solid rgb(70, 68, 68);
+        text-align: center;
+        color: #d8e4ee;
+        margin-top: 15%;
+        background-color: #262d33;
+    }
+
+
+
+}
+@media screen and (max-width:500px) {
+    
+    .container-about-we{
+        background-color: #7598ad38;
+    }
+    .container-about-we>
+    .col-sm-12>
+    .col-sm-6>
+    h3{
+    margin-bottom: 15px;
+    color: #178888;
+    font-size: 20px
+    }
+    .portfolio>.containers>.galeria-port>
+    .image-port {
+    width: 40%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    }
+    .customers{
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(to right, #70bedf62, #6787f1ab), url(../../img/page/Portada2.jpg);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+    }
+    .customers>.container>.target{
+        width: 370px;  
+    }
+    .customers>.container>.titlecustomers{
+        font-size: 30px;
+        font-weight: 700;
+        color: rgb(233, 237, 241);
+        text-shadow: 1px 1px 2px rgba(91, 99, 98, 0.748);
+    }
+    .customers .card_customers .cards{
+        /* margin: 10px 10px; */
+        background: linear-gradient(to left, #036ba9, #9fa7ac);
+        width: 85%;
+        height: 250px;
+        border-radius: 5px;
+        margin-left: 30px;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    }
+    .title-head-end>h1{
+        font-size:30px;
+        text-align: center;
+ 
+    }
+    .main-footer{
+        border: 2px solid rgb(15, 15, 15);
+        height: 350px;
+        background-color: #262d33;
+    }
+    .text-footer{
+        padding-top: 10%;
+       
+    }
+   
+
+
+}
+@media screen and (max-width:400px) {
+    .headers{
+        width: 100%;
+        height: 400px;
+        background: #3493e600;
+        /* fallback for old browsers */
+        /* background: -webkit-linear-gradient(to right, #6e818b33, #809ab87c), url(../../img/page/Portada2.jpg);
+        Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #00537700, #002f5b54), url(../../img/page/Portada2.jpg);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-size: cover;
+        background-position: center;
+        background-attachment: inherit;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .headers>.titleMain{  
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 2px rgba(46, 61, 59, 0.748);
+        font-family: 'Quantico', sans-serif;
+    }
+    .title-head{
+        font-size: 20px;
+    }
+    .container-about-we>
+    .col-sm-12>
+    .col-sm-6>
+    h3{
+    margin-bottom: 15px;
+    color: #178888;
+    font-size: 20px
+    }
+    h3 span {
+  
+        width:20px;
+        height: 20px;
+        
+    }
+    .container-about-we{
+        background-color: #7598ad38;
+    }
+    
+    .portfolio>.containers>.galeria-port>
+    .image-port {
+        width: 45%;
+    }
+    .customers{
+        width: 100%;
+        height: 400px;
+    
+        /* fallback for old browsers */
+        /* background: -webkit-linear-gradient(to right, #6e818b33, #809ab87c), url(../../img/page/Portada2.jpg); */
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #70bedf62, #6787f1ab), url(../../img/page/Portada2.jpg);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+    }
+    .customers>.container>.target{
+        width: 350px;  
+    }
+    .customers .card_customers .cards{
+        width: 90%;
+        margin:0 20px;       
+    }
+    .customers>.container>.titlecustomers{
+        font-size: 25px;
+        font-weight: 700;
+        color: rgb(233, 237, 241);
+        text-shadow: 1px 1px 2px rgba(91, 99, 98, 0.748);
+    }
+
+    .title-head-end>h1{
+        color: rgb(3, 107, 169);
+        font-size: 30px;
+        text-shadow: 1px 1px 2px rgba(91, 99, 98, 0.748);
+        text-align: center;
+    }
+    .main-footer{
+        height: 300px;
+    }
+    .text-footer{
+        padding-top: 5%;
+    }
+
+}

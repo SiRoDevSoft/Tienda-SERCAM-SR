@@ -1,0 +1,17 @@
+{
+    "name": "silvio/site_web",
+    "autoload": {
+        "psr-4": {
+            "Silvio\\SiteWeb\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Siro",
+            "email": "Siro@Siro.com"
+        }
+    ],
+    "require": {
+        "mercadopago/dx-php": "^2.4"
+    }
+}
