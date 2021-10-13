@@ -39,7 +39,7 @@
                                         <tbody id="tbody">
                                         </tbody>
                                     </table>
-                                </div>
+                                </div> 
                             </div>
 
                             <?php if(!isset($_SESSION['user'])):?>

@@ -412,6 +412,16 @@ function verifyEmail($conexion, $email){
     return $result;
 }
 
+// Verificar existencia de stock del producto registrado
+function searchStock($conexion, $product){
+	$stmt = $conexion->prepare("SELECT stock FROM products WHERE id=:id");
+	$stmt->execute(['id'=>$product]);
+
+	$result= $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    return $result;
+}
+
 // Actualizacion de datos de administrador del sitio
 
 function updateAdmin($conexion, $id, $name, $surname, $email, $photo, $pass ){

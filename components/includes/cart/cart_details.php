@@ -24,6 +24,20 @@ include '../../../administrador/helpers/helpers.php';
 				}
 				else{
 					// actualizar el carrito de compras en caso de modificar cantidad solamente
+					// $searchStock= searchStock($conexion, $row['productid']);
+					// $productQuantity=0;
+					// foreach($searchStock as $quantity){
+						
+					// 	if($quantity>0){
+					// 		$totalQuantity=$quantity-$row['quantity'];
+					// 		if($totalQuantity<0){
+					// 			$_SESSION['stop'];
+					// 		} else{
+					// 			$updateQuantity= updateQuantityCart($conexion,$user['id'],$row['quantity'],$row['productid']);
+					// 		}
+					// 	}
+
+					// }
 					$updateQuantity= updateQuantityCart($conexion,$user['id'],$row['quantity'],$row['productid']);
 					
 				}
@@ -58,7 +72,7 @@ include '../../../administrador/helpers/helpers.php';
             				</span>
             				<input type='text' class='form-control' value='".$row['quantity']."' id='qty_".$row['cartid']."'>
 				            <span class='input-group-btn'>
-				                <button type='button' id='add' class='btn btn-default btn-flat add' data-id='".$row['cartid']."'><i class='fa fa-plus'></i>
+				                <button type='button' id='add'  class='btn btn-default btn-flat add' data-id='".$row['cartid']."'><i class='fa fa-plus'></i>
 				                </button>
 				            </span>
 						</td>
