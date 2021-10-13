@@ -14,6 +14,13 @@
 		$email = $_POST['email'];
 		$password = $_POST['password'];
 		$repassword = $_POST['repassword'];
+
+		
+		$_SESSION['firstname'] = $firstname;
+		$_SESSION['lastname'] = $lastname;
+		$_SESSION['email'] = $email;
+		$_SESSION['contact']=$contact;
+		$_SESSION['address']=$address;
 		
 		//fields of validation
 
